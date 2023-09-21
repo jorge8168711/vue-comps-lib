@@ -1,10 +1,7 @@
 import type { App } from 'vue';
 import { Button } from "@/components";
-
-export default {
-  install: (app: App) => {
-    app.component('Button', Button);
-  }
+declare const _default: {
+    install: (app: App) => void;
 };
-
+export default _default;
 export { Button };
