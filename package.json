@@ -1,0 +1,38 @@
+{
+  "name": "vue-comps-lib",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/my-com-lib.umd.cjs",
+  "module": "./dist/my-com-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-com-lib.js",
+      "require": "./dist/my-com-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc -declaration --emitDeclarationOnly",
+    "types": "vue-tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.6.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "path": "^0.12.7",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.4",
+    "vue-tsc": "^1.8.5"
+  }
+}
