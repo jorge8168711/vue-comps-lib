@@ -26,6 +26,7 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@babel/types": "^7.22.19",
     "@types/node": "^20.6.3",
     "@vitejs/plugin-vue": "^4.2.3",
     "path": "^0.12.7",
